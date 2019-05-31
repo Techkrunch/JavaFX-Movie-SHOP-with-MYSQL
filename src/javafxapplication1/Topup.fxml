@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="351.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.TopupController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+    <children>
+        <Label id="label" layoutX="231.0" layoutY="36.0" stylesheets="@styles.css" text="Top-up Account">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="118.0" fitWidth="172.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/images.jpeg" />
+            </image>
+        </ImageView>
+        <Label id="labe" layoutX="163.0" layoutY="145.0" text="ID:" />
+        <Label id="labe" layoutX="163.0" layoutY="183.0" text="Top-up Amount:" />
+        <TextField fx:id="cusid" layoutX="286.0" layoutY="138.0" onKeyReleased="#typesdaaa" />
+        <TextField fx:id="topup" layoutX="286.0" layoutY="185.0" />
+        <Label id="labe" fx:id="status" layoutX="231.0" layoutY="229.0" prefHeight="17.0" prefWidth="0.0" />
+        <Button id="btnb" fx:id="btntopup" layoutX="248.0" layoutY="262.0" mnemonicParsing="false" onAction="#btntopup" text="Top-Up Account" />
+        <Button id="btnb" layoutX="266.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnclose" text="Close" />
+    </children>
+</AnchorPane>

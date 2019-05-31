@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="javafxapplication1.MovieController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="movietitle" layoutX="262.0" layoutY="179.0" stylesheets="@styles.css" />
+      <TextField fx:id="movieyear" layoutX="263.0" layoutY="215.0" stylesheets="@styles.css" />
+      <TextField fx:id="moviegenre" layoutX="262.0" layoutY="249.0" stylesheets="@styles.css" />
+      <Label id="labe" layoutX="198.0" layoutY="254.0" stylesheets="@styles.css" text="Genre:" />
+      <Label id="labe" layoutX="198.0" layoutY="219.0" stylesheets="@styles.css" text="Year:" />
+      <Label id="labe" layoutX="198.0" layoutY="184.0" stylesheets="@styles.css" text="Title:" />
+      <ImageView fitHeight="118.0" fitWidth="172.0" layoutX="46.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" style=": whitesmoke;">
+         <image>
+            <Image url="@../images/images.jpeg" />
+         </image>
+      </ImageView>
+      <Label id="label" layoutX="263.0" layoutY="52.0" stylesheets="@styles.css" text="Add Movie">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label id="labe" layoutX="199.0" layoutY="295.0" stylesheets="@styles.css" text="Price:" />
+      <TextField fx:id="movieprice" layoutX="263.0" layoutY="291.0" />
+      <Button id="btnb" layoutX="300.0" layoutY="328.0" mnemonicParsing="false" onAction="#addmovie" stylesheets="@styles.css" text="Add Movie" />
+      <Button id="btnb" layoutX="315.0" layoutY="361.0" mnemonicParsing="false" onAction="#closemovies" stylesheets="@styles.css" text="Close" />
+   </children>
+</AnchorPane>

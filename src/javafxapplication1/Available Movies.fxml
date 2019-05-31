@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.AvailableMoviesController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+    <children>
+        <ImageView fitHeight="118.0" fitWidth="172.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/images.jpeg" />
+            </image>
+        </ImageView>
+        <Label id="label" layoutX="231.0" layoutY="36.0" stylesheets="@styles.css" text="Alvailable Movies">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <Button id="btnb" layoutX="275.0" layoutY="368.0" mnemonicParsing="false" onAction="#exit" stylesheets="@styles.css" text="Exit" />
+        <TableView id="jtable" fx:id="availablemovies" layoutX="12.0" layoutY="156.0" prefHeight="200.0" prefWidth="577.0" stylesheets="@styles.css" />
+    </children>
+</AnchorPane>

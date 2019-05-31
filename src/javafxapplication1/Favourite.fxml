@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FavouriteController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+    <children>
+        <ImageView fitHeight="118.0" fitWidth="172.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style=": whitesmoke;">
+            <image>
+                <Image url="@../images/images.jpeg" />
+            </image>
+        </ImageView>
+        <Label id="label" layoutX="231.0" layoutY="36.0" stylesheets="@styles.css" text="Favourite Movies">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <TextField fx:id="search" layoutX="272.0" layoutY="107.0" prefHeight="25.0" prefWidth="159.0" />
+        <Label layoutX="188.0" layoutY="111.0" text="Customer ID:" />
+        <Button id="btnb" fx:id="btnselectcus" layoutX="442.0" layoutY="107.0" mnemonicParsing="false" onAction="#btnselectcus" prefHeight="25.0" prefWidth="106.0" stylesheets="@styles.css" text="Select Customer" />
+        <Button id="btnb" fx:id="btnexit" layoutX="257.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnexit" prefHeight="25.0" prefWidth="106.0" stylesheets="@styles.css" text="Close" />
+        <TableView fx:id="tableview" layoutX="20.0" layoutY="146.0" prefHeight="200.0" prefWidth="560.0" />
+    </children>
+</AnchorPane>
+  

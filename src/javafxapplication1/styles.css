@@ -1,0 +1,40 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+}
+#AnchorPane{
+    -fx-background-color: whitesmoke;
+}
+#label{
+  -fx-text-fill : orange;
+}
+
+#inputs{
+  -fx-border-color : green;
+}
+#label1{
+  -fx-text-fill : black;
+  -fx-font-weight: bold;
+  -fx-font-size: 20px;
+}
+#btn{
+  -fx-text-fill : black;
+  -fx-background-color: white;
+  -fx-text-alignment: center;
+}
+#btnb{
+  -fx-background-color : black; 
+-fx-text-fill : white;
+}
+#labe{
+  -fx-text-fill : black;
+   -fx-font-weight: bold;
+}
+#jtable{
+  -fx-border-color: orange;
+}
+#list{
+  -fx-border-color: orange;
+}

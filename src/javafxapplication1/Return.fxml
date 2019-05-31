@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.ReturnController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+    <children>
+        <Label id="labe" layoutX="192.0" layoutY="110.0" stylesheets="@styles.css" text="Customer ID:" />
+        <Label id="label" layoutX="231.0" layoutY="22.0" stylesheets="@styles.css" text="Return a Movie">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="118.0" fitWidth="172.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/images.jpeg" />
+            </image>
+        </ImageView>
+        <TextField fx:id="cusid" layoutX="277.0" layoutY="106.0" />
+        <Button id="btnb" fx:id="btnselectcus" layoutX="453.0" layoutY="106.0" mnemonicParsing="false" onAction="#btnSelect" stylesheets="@styles.css" text="Select Customer" />
+        <Label id="labe" layoutX="265.0" layoutY="166.0" stylesheets="@styles.css" text="Available Movies" />
+        <TableView id="jtable" fx:id="tableview" layoutX="13.0" layoutY="183.0" prefHeight="200.0" prefWidth="576.0" stylesheets="@styles.css" />
+        <Button id="btnb" fx:id="btnreturn" layoutX="247.0" layoutY="396.0" mnemonicParsing="false" onAction="#returnselectedmovie" stylesheets="@styles.css" text="Rent Selected Movie" />
+        <Button id="btnb" layoutX="285.0" layoutY="436.0" mnemonicParsing="false" onAction="#btnexit" stylesheets="@styles.css" text="Close" />
+    </children>
+</AnchorPane>

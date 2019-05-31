@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.CustomerController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+   <children>
+      <Label id="label" layoutX="253.0" layoutY="42.0" stylesheets="@styles.css" text="Add Customer">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="118.0" fitWidth="172.0" layoutX="36.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" style=": whitesmoke;">
+         <image>
+            <Image url="@../images/images.jpeg" />
+         </image>
+      </ImageView>
+      <Label id="labe" layoutX="188.0" layoutY="174.0" stylesheets="@styles.css" text="ID:" />
+      <Label id="labe" layoutX="188.0" layoutY="209.0" stylesheets="@styles.css" text="Name:" />
+      <Label id="labe" layoutX="188.0" layoutY="244.0" stylesheets="@styles.css" text="Balance:" />
+      <TextField id="inputs" fx:id="cusid" layoutX="253.0" layoutY="170.0" stylesheets="@styles.css" />
+      <TextField id="inputs" fx:id="cusname" layoutX="253.0" layoutY="205.0" stylesheets="@styles.css" />
+      <TextField id="inputs" fx:id="cusbal" layoutX="253.0" layoutY="240.0" stylesheets="@styles.css" />
+      <Button id="btnb" layoutX="282.0" layoutY="298.0" mnemonicParsing="false" onAction="#addcus" stylesheets="@styles.css" text="Add Customer" />
+      <Button id="btnb" layoutX="306.0" layoutY="361.0" mnemonicParsing="false" onAction="#exibtn" stylesheets="@styles.css" text="Close" />
+   </children>
+</AnchorPane>

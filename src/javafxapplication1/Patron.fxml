@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.PatronController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+    <children>
+        <Label id="label" layoutX="250.0" layoutY="36.0" stylesheets="@styles.css" text="Customer Record">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="118.0" fitWidth="172.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style=": whitesmoke;">
+            <image>
+                <Image url="@../images/images.jpeg" />
+            </image>
+        </ImageView>
+        <Label layoutX="222.0" layoutY="100.0" text="Customer ID:" />
+        <TextField fx:id="search" layoutX="306.0" layoutY="96.0" prefHeight="25.0" prefWidth="159.0" />
+        <Button id="btnb" fx:id="btnselectcus" layoutX="476.0" layoutY="96.0" mnemonicParsing="false" onAction="#btnselectcus" prefHeight="25.0" prefWidth="106.0" stylesheets="@styles.css" text="Select Customer" />
+        <Label fx:id="status" layoutX="305.0" layoutY="132.0" prefHeight="17.0" prefWidth="159.0" />
+        <Label layoutX="236.0" layoutY="158.0" text="Rented Movies">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TableView id="jtable" fx:id="tablerentedmovies" layoutX="15.0" layoutY="188.0" prefHeight="183.0" prefWidth="570.0" stylesheets="@styles.css" />
+        <Label layoutX="230.0" layoutY="383.0" text="Rented History">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TableView id="jtable" fx:id="tablerentedhistory" layoutX="15.0" layoutY="413.0" prefHeight="191.0" prefWidth="570.0" stylesheets="@styles.css" />
+        <Button id="btnb" layoutX="253.0" layoutY="608.0" mnemonicParsing="false" onAction="#btnclose" prefHeight="25.0" prefWidth="76.0" stylesheets="@styles.css" text="Close" />
+    </children>
+</AnchorPane>

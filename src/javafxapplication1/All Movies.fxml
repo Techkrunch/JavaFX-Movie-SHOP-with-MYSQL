@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="javafxapplication1.AllMoviesController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+   <children>
+      <Label id="label" layoutX="241.0" layoutY="46.0" stylesheets="@styles.css" text="All Movies">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="118.0" fitWidth="172.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/images.jpeg" />
+         </image>
+      </ImageView>
+      <TableView id="jtable" fx:id="allmovies" layoutX="14.0" layoutY="149.0" prefHeight="200.0" prefWidth="577.0" stylesheets="@styles.css" />
+      <Button id="btnb" layoutX="277.0" layoutY="361.0" mnemonicParsing="false" onAction="#exit" stylesheets="@styles.css" text="Exit" />
+   </children>
+</AnchorPane>
